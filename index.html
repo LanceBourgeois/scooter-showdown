@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#f7f8fa">
-<title>Phoenix's Ride — G2 vs ST3</title>
-<meta name="description" content="KUKIRIN G2 vs NAVEE ST3 — a straight, spec-checked comparison for Phoenix.">
 <meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f7f8fa">
+<title>Phoenix's Ride — G2 vs ST3 Pro</title>
+<meta name="description" content="KUKIRIN G2 vs NAVEE ST3 Pro — a straight, spec-checked comparison for Phoenix.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -39,8 +39,6 @@
   }
   .wrap{max-width:680px;margin:0 auto;padding:0 16px}
   h1,h2,h3,.display{font-family:'Space Grotesk','Inter',sans-serif;letter-spacing:-.02em;line-height:1.15}
-
-  /* Header */
   header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);
     backdrop-filter:saturate(140%) blur(12px);-webkit-backdrop-filter:saturate(140%) blur(12px);
     border-bottom:1px solid var(--line)}
@@ -52,35 +50,29 @@
     width:40px;height:40px;border-radius:12px;display:grid;place-items:center;cursor:pointer;
     font-size:17px;transition:transform .15s ease,background .2s}
   .toggle:active{transform:scale(.92)}
-
-  /* Hero */
   .hero{padding:34px 0 8px;text-align:center}
   .kicker{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
     color:var(--muted);background:var(--bg2);padding:6px 13px;border-radius:100px;margin-bottom:16px}
-  .hero h1{font-size:33px;font-weight:700;margin-bottom:12px}
+  .hero h1{font-size:31px;font-weight:700;margin-bottom:12px}
   .hero h1 .vs{color:var(--faint);font-weight:500;padding:0 6px}
   .g2t{color:var(--g2)} .st3t{color:var(--st3)}
-  .hero p{color:var(--muted);font-size:15.5px;max-width:460px;margin:0 auto}
-
-  /* Contender cards */
+  .hero p{color:var(--muted);font-size:15.5px;max-width:470px;margin:0 auto}
   .cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
   .contender{padding:18px 15px;text-align:center;position:relative;overflow:hidden}
   .contender::before{content:"";position:absolute;top:0;left:0;right:0;height:4px}
   .contender.g2::before{background:var(--g2)} .contender.st3::before{background:var(--st3)}
   .contender .make{font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
-  .contender .model{font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:700;margin:3px 0 2px}
+  .contender .model{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;margin:3px 0 2px}
   .contender.g2 .model{color:var(--g2)} .contender.st3 .model{color:var(--st3)}
   .contender .tag{font-size:12.5px;color:var(--muted);min-height:34px;display:flex;align-items:center;justify-content:center}
   .contender .yr{margin-top:10px;font-size:11.5px;color:var(--faint);border-top:1px solid var(--line);padding-top:9px}
-
-  /* Section */
+  .yours{position:absolute;top:9px;right:-30px;transform:rotate(45deg);background:var(--win);color:#fff;
+    font-size:9.5px;font-weight:700;letter-spacing:.04em;padding:3px 32px;box-shadow:0 2px 6px rgba(0,0,0,.15)}
   section{margin-top:34px}
   .h-eyebrow{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
-  section > .wrap > h2, .sec-h{font-size:22px;font-weight:700;margin-bottom:4px}
+  .sec-h{font-size:22px;font-weight:700;margin-bottom:4px}
   .sec-sub{color:var(--muted);font-size:14.5px;margin-bottom:16px}
-
-  /* Spec rows */
   .spec{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
   .spec-row{padding:13px 15px;border-bottom:1px solid var(--line)}
   .spec-row:last-child{border-bottom:0}
@@ -92,14 +84,11 @@
   .val.g2{background:var(--g2soft)} .val.st3{background:var(--st3soft)}
   .val .n{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16.5px;display:block}
   .val.g2 .n{color:var(--g2ink)} .val.st3 .n{color:var(--st3ink)}
-  [data-theme="dark"] .val.g2 .n{color:var(--g2ink)} [data-theme="dark"] .val.st3 .n{color:var(--st3ink)}
   .val .s{font-size:11.5px;color:var(--muted);display:block;margin-top:1px}
   .win-pill{position:absolute;top:-7px;right:8px;background:var(--win);color:#fff;font-size:10px;font-weight:700;
     padding:2px 7px;border-radius:100px;letter-spacing:.03em;box-shadow:0 2px 6px rgba(0,0,0,.15)}
   .note-row{padding:11px 15px;background:var(--card2);font-size:12.5px;color:var(--muted)}
   .note-row b{color:var(--ink);font-weight:600}
-
-  /* Callout */
   .callout{border-radius:var(--radius);padding:16px 16px;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow)}
   .callout.warn{background:var(--warnsoft);border-color:color-mix(in srgb,var(--warn) 40%,var(--line))}
   .callout.st3a{background:var(--st3soft);border-color:color-mix(in srgb,var(--st3) 35%,var(--line))}
@@ -107,23 +96,21 @@
   .callout h3{font-size:16.5px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px}
   .callout p{font-size:14px;color:var(--muted)} .callout p + p{margin-top:8px}
   .callout .big{font-size:14px;color:var(--ink)}
-
-  /* Verdict */
   .verdict{background:linear-gradient(160deg,var(--card),var(--card2));border:1px solid var(--line);
     border-radius:22px;padding:22px 18px;box-shadow:var(--shadow)}
   .verdict .lead{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
-  .verdict h2{font-size:23px;margin:6px 0 14px}
+  .verdict h2{font-size:23px;margin:6px 0 6px}
+  .verdict .intro{font-size:14px;color:var(--muted);margin-bottom:14px}
   .pick{display:flex;gap:12px;align-items:flex-start;padding:14px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
   .pick + .pick{margin-top:10px}
+  .pick.top{border-color:color-mix(in srgb,var(--win) 45%,var(--line))}
   .pick .medal{flex:0 0 auto;width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-size:19px}
   .pick.top .medal{background:var(--st3soft)} .pick.alt .medal{background:var(--g2soft)}
   .pick .who{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px}
   .pick.top .who{color:var(--st3)} .pick.alt .who{color:var(--g2)}
   .pick .why{font-size:13.5px;color:var(--muted);margin-top:2px}
   .pick .badge{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:2px 8px;border-radius:100px;display:inline-block;margin-bottom:3px}
-  .pick.top .badge{background:var(--st3);color:#fff} .pick.alt .badge{background:var(--g2);color:#fff}
-
-  /* Sentiment */
+  .pick.top .badge{background:var(--win);color:#fff} .pick.alt .badge{background:var(--g2);color:#fff}
   .rev{display:grid;gap:12px}
   .rev-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
   .rev-card .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
@@ -137,20 +124,6 @@
   .plus{color:var(--win)} .minus{color:var(--warn)}
   .quote{border-left:3px solid var(--line);padding:2px 0 2px 12px;margin-top:10px;font-size:13px;color:var(--muted);font-style:italic}
   .src{font-size:11px;color:var(--faint);margin-top:9px}
-
-  /* Helmet */
-  .helmet{display:grid;gap:11px}
-  .hh{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:15px;box-shadow:var(--shadow);
-    display:block;text-decoration:none;color:inherit;transition:transform .12s ease,border-color .2s}
-  .hh:active{transform:scale(.99)}
-  .hh.lead{border-color:color-mix(in srgb,var(--win) 45%,var(--line))}
-  .hh .rank{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--win);margin-bottom:4px}
-  .hh .nm{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15.5px;margin-bottom:3px}
-  .hh .cert{display:inline-block;font-size:11px;font-weight:600;color:var(--muted);background:var(--bg2);padding:3px 9px;border-radius:100px;margin:4px 0 6px}
-  .hh .why{font-size:13px;color:var(--muted)}
-  .hh .go{font-size:12.5px;font-weight:600;color:var(--st3);margin-top:9px;display:inline-flex;align-items:center;gap:5px}
-
-  /* buttons / links */
   .links{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
   .btn{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:3px;
     padding:15px 12px;border-radius:15px;text-decoration:none;font-weight:600;border:1px solid var(--line);
@@ -160,14 +133,11 @@
   .btn .b2{font-family:'Space Grotesk',sans-serif;font-size:16px}
   .btn.g2 .b2{color:var(--g2)} .btn.st3 .b2{color:var(--st3)}
   .btn .b3{font-size:11.5px;color:var(--muted);font-weight:500}
-
   ul.clean{list-style:none;display:grid;gap:9px}
   ul.clean li{position:relative;padding-left:26px;font-size:14px;color:var(--muted)}
   ul.clean li b{color:var(--ink);font-weight:600}
   ul.clean li .ci{position:absolute;left:0;top:1px;font-size:15px}
-
   .fineprint{font-size:11.5px;color:var(--faint);margin-top:12px;line-height:1.5}
-  .fineprint a{color:var(--muted)}
   footer{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);text-align:center}
   footer .sig{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px}
   footer p{font-size:12px;color:var(--faint);margin-top:6px}
@@ -185,55 +155,53 @@
 
 <div class="wrap">
 
-  <!-- HERO -->
   <div class="hero">
     <span class="kicker">Built for Phoenix 🛴</span>
-    <h1><span class="g2t">KUKIRIN G2</span><span class="vs">vs</span><span class="st3t">NAVEE ST3</span></h1>
-    <p>Two solid scooters, two different personalities. Here's the straight, spec-checked breakdown — no hype, no prices, just what actually matters. Take your time and pick the one that fits <em>you</em>.</p>
+    <h1><span class="g2t">KUKIRIN G2</span><span class="vs">vs</span><span class="st3t">NAVEE ST3 Pro</span></h1>
+    <p>Good news — the <b class="st3t">NAVEE ST3 Pro</b> is the one that's on its way to you. Here's how it stacks up against the KUKIRIN G2 you were weighing, and why it's a strong call. No hype, no prices — just the ride.</p>
   </div>
 
-  <!-- CONTENDERS -->
   <div class="cards">
     <div class="card contender g2">
       <div class="make">KUKIRIN</div>
       <div class="model">G2</div>
       <div class="tag">The raw-power speedster</div>
-      <div class="yr">Released ~2024 · revised yearly (“2025/2026” version)</div>
+      <div class="yr">Released ~2024 · revised yearly</div>
     </div>
     <div class="card contender st3">
+      <div class="yours">✓ YOURS</div>
       <div class="make">NAVEE</div>
-      <div class="model">ST3</div>
-      <div class="tag">The smart, secure commuter</div>
-      <div class="yr">Launched 2025 (unveiled at CES, Jan 2025)</div>
+      <div class="model">ST3 Pro</div>
+      <div class="tag">The smart, secure all-rounder</div>
+      <div class="yr">Launched 2025 (debuted at CES, Jan 2025)</div>
     </div>
   </div>
 
-  <!-- THE VERDICT (up top, so it's scannable) -->
   <section>
     <div class="verdict">
       <div class="lead">The honest take</div>
-      <h2>So… which one?</h2>
+      <h2>Great call, Phoenix 🎉</h2>
+      <p class="intro">The ST3 Pro was the top pick in the research too — here's why it's the smarter machine, and where the G2 still would've had an edge.</p>
       <div class="pick top">
-        <div class="medal">🛡️</div>
+        <div class="medal">🏆</div>
         <div>
-          <span class="badge">My pick for you</span>
-          <div class="who">NAVEE ST3</div>
-          <div class="why">Smarter and safer to <em>own</em>. It has a phone app, an Apple <b>Find My</b> tracker, and a Bluetooth lock — so if it ever walks off, you can find it. Better-reviewed tech, higher water resistance, turn signals, and a real 2025 support system. A little slower, but the more refined ride.</div>
+          <span class="badge">The one you got</span>
+          <div class="who">NAVEE ST3 Pro</div>
+          <div class="why">The best all-rounder of the two. It's the only one with an <b>Apple Find My</b> tracker + Bluetooth lock (so you can find it if it's ever stolen), it's <b>UL2272 safety-certified</b>, has the plusher ride, a rear disc brake, and it actually earned a <b>9.0/10 from independent testers</b>. Its 40 km/h sits right in the sweet spot, and its 48V motor keeps its power even as the battery drains.</div>
         </div>
       </div>
       <div class="pick alt">
         <div class="medal">🔥</div>
         <div>
-          <span class="badge">Strong alternative</span>
+          <span class="badge">What you compared</span>
           <div class="who">KUKIRIN G2</div>
-          <div class="why">If pure performance is what excites you: it's <b>faster (45 km/h)</b>, has a <b>bigger battery</b>, a <b>stronger rated motor</b>, <b>climbs steeper hills</b>, front disc brake, and a loud electric horn. The trade-off: no app, no anti-theft tracking, and thinner reviews.</div>
+          <div class="why">The raw-muscle option: <b>faster flat-out (45 km/h)</b>, a bigger battery, higher <em>rated</em> motor, steeper hills on paper, front disc brake, and a loud electric horn. But no app, no anti-theft tracking, no confirmed safety cert, and thinner reviews — which is exactly why the ST3 Pro is the better everyday scooter.</div>
         </div>
       </div>
-      <p class="fineprint">Both are genuinely good. The ST3 wins on brains &amp; safety; the G2 wins on raw muscle. There's no wrong answer here — it's about what you value more.</p>
+      <p class="fineprint">Bottom line: you traded a little top speed for tracking, safety certification, a smoother ride, and a machine that reviewers actually rate. Good trade.</p>
     </div>
   </section>
 
-  <!-- SPEC HEAD-TO-HEAD -->
   <section>
     <div class="h-eyebrow">Apples to apples</div>
     <h2 class="sec-h">The numbers, side by side</h2>
@@ -245,7 +213,7 @@
         <div class="spec-label"><span class="ico">⚡</span> Top speed (max, N. America)</div>
         <div class="spec-grid">
           <div class="val g2"><span class="win-pill">Faster</span><span class="n">45 km/h</span><span class="s">modes: 25 / 35 / 45</span></div>
-          <div class="val st3"><span class="n">40 km/h</span><span class="s">US version (region-locked)</span></div>
+          <div class="val st3"><span class="n">40 km/h</span><span class="s">tested 39.9 — your sweet spot</span></div>
         </div>
       </div>
 
@@ -253,15 +221,15 @@
         <div class="spec-label"><span class="ico">🔋</span> Battery</div>
         <div class="spec-grid">
           <div class="val g2"><span class="win-pill">Bigger</span><span class="n">48V · 15Ah</span><span class="s">≈720 Wh (calculated)</span></div>
-          <div class="val st3"><span class="n">48V · 10.2Ah</span><span class="s">477 Wh (stated)</span></div>
+          <div class="val st3"><span class="n">48V · 12.75Ah</span><span class="s">597 Wh (stated)</span></div>
         </div>
       </div>
 
       <div class="spec-row">
-        <div class="spec-label"><span class="ico">⚙️</span> Motor — rated vs rated</div>
+        <div class="spec-label"><span class="ico">⚙️</span> Motor — rated / peak</div>
         <div class="spec-grid">
-          <div class="val g2"><span class="win-pill">Stronger</span><span class="n">800 W</span><span class="s">rated · peak ~1200W*</span></div>
-          <div class="val st3"><span class="n">500 W</span><span class="s">rated · peak 1000W</span></div>
+          <div class="val g2"><span class="win-pill">Higher rated</span><span class="n">800 W</span><span class="s">rated · peak ~1200W*</span></div>
+          <div class="val st3"><span class="n">600 W</span><span class="s">rated · peak 1350W (higher burst)</span></div>
         </div>
       </div>
 
@@ -269,16 +237,16 @@
         <div class="spec-label"><span class="ico">📏</span> Advertised range</div>
         <div class="spec-grid">
           <div class="val g2"><span class="n">Up to 55 km</span><span class="s">@ medium speed, 65 kg</span></div>
-          <div class="val st3"><span class="n">Up to 60 km</span><span class="s">@ 15 km/h, 75 kg</span></div>
+          <div class="val st3"><span class="n">Up to 75 km</span><span class="s">@ 15 km/h, 75 kg</span></div>
         </div>
       </div>
-      <div class="note-row">⚠️ <b>Read the fine print:</b> each brand tests range at a different slow speed, so these aren't a fair race. See the real-world reality check below.</div>
+      <div class="note-row">⚠️ <b>Read the fine print:</b> each brand tests range at a different slow speed, so these aren't a fair race. Real-world reality check below.</div>
 
       <div class="spec-row">
         <div class="spec-label"><span class="ico">⛰️</span> Hill climbing (converted to match)</div>
         <div class="spec-grid">
-          <div class="val g2"><span class="win-pill">Steeper</span><span class="n">20°</span><span class="s">= ~36% grade</span></div>
-          <div class="val st3"><span class="n">~13.5°</span><span class="s">= 24% grade (stated)</span></div>
+          <div class="val g2"><span class="win-pill">Steeper</span><span class="n">20°</span><span class="s">= ~36% grade (rated)</span></div>
+          <div class="val st3"><span class="n">~28% grade</span><span class="s">= ~15.6° · tested strong on hills</span></div>
         </div>
       </div>
 
@@ -286,7 +254,7 @@
         <div class="spec-label"><span class="ico">🛑</span> Brakes</div>
         <div class="spec-grid">
           <div class="val g2"><span class="win-pill">Front disc</span><span class="n">Disc + disc</span><span class="s">front &amp; rear + E-ABS</span></div>
-          <div class="val st3"><span class="n">Drum + disc</span><span class="s">front drum, rear disc + EABS</span></div>
+          <div class="val st3"><span class="n">Drum + disc</span><span class="s">front drum, rear disc + regen</span></div>
         </div>
       </div>
 
@@ -294,7 +262,7 @@
         <div class="spec-label"><span class="ico">🪶</span> Suspension</div>
         <div class="spec-grid">
           <div class="val g2"><span class="n">Dual spring</span><span class="s">front &amp; rear</span></div>
-          <div class="val st3"><span class="n">Dual damping-arm</span><span class="s">front &amp; rear · praised as plush</span></div>
+          <div class="val st3"><span class="win-pill">Plusher</span><span class="n">Dual damping-arm</span><span class="s">"riding on a cloud" — reviewers</span></div>
         </div>
       </div>
 
@@ -302,7 +270,7 @@
         <div class="spec-label"><span class="ico">🛞</span> Tires</div>
         <div class="spec-grid">
           <div class="val g2"><span class="n">10″ tubeless</span><span class="s">off-road tread</span></div>
-          <div class="val st3"><span class="n">10″ tubeless</span><span class="s">self-sealing</span></div>
+          <div class="val st3"><span class="n">10″ × 2.5″ tubeless</span><span class="s">self-healing</span></div>
         </div>
       </div>
 
@@ -310,7 +278,7 @@
         <div class="spec-label"><span class="ico">⚖️</span> Weight &amp; max rider</div>
         <div class="spec-grid">
           <div class="val g2"><span class="n">~24 kg</span><span class="s">holds up to 120 kg</span></div>
-          <div class="val st3"><span class="n">24.8 kg</span><span class="s">holds up to 120 kg</span></div>
+          <div class="val st3"><span class="n">24.9 kg</span><span class="s">holds up to 120 kg</span></div>
         </div>
       </div>
 
@@ -318,7 +286,7 @@
         <div class="spec-label"><span class="ico">💡</span> Lighting</div>
         <div class="spec-grid">
           <div class="val g2"><span class="n">Full set</span><span class="s">head, tail, 2× brake, 4× turn</span></div>
-          <div class="val st3"><span class="n">Head + tail + turn</span><span class="s">auto-brightness headlight</span></div>
+          <div class="val st3"><span class="n">Head + tail + turn</span><span class="s">+ custom LED accent lights</span></div>
         </div>
       </div>
 
@@ -331,6 +299,14 @@
       </div>
 
       <div class="spec-row">
+        <div class="spec-label"><span class="ico">🛡️</span> Safety certification</div>
+        <div class="spec-grid">
+          <div class="val g2"><span class="n">Claimed only</span><span class="s">UL2272 brand-claimed, unverified</span></div>
+          <div class="val st3"><span class="win-pill">Certified</span><span class="n">UL2272 ✓</span><span class="s">independently confirmed</span></div>
+        </div>
+      </div>
+
+      <div class="spec-row">
         <div class="spec-label"><span class="ico">📱</span> Smart features &amp; security</div>
         <div class="spec-grid">
           <div class="val g2"><span class="n">None official</span><span class="s">no app · no lock · no tracking</span></div>
@@ -338,59 +314,56 @@
         </div>
       </div>
 
-      <div class="note-row">*G2 peak wattage (1200W) comes from retailer listings, not KUKIRIN's official spec sheet. A few G2 numbers (battery Ah, weight, water rating) differ between KUKIRIN's own pages — we show the common values.</div>
+      <div class="note-row">*G2 peak wattage (1200W) is from retailer listings, not KUKIRIN's official spec sheet. A few G2 numbers differ between KUKIRIN's own pages — we show the common values. ST3 Pro specs are ERideHero-verified.</div>
     </div>
   </section>
 
-  <!-- REALITY CHECK -->
   <section>
     <div class="callout warn">
       <h3>📉 Real-world range ≠ the advertised number</h3>
-      <p class="big">Both makers measure range at unrealistically slow, steady speeds. Independent testers consistently get <b>roughly half</b> the claim when you actually ride normally.</p>
-      <p>For the NAVEE family, testers (ERideHero) measured <b>~40 km real</b> vs the Pro's ~75 km claim. The KUKIRIN's ~55 km claim shrinks the same way in owner reports (~30-ish km real). <b>Plan for about 50–60% of the sticker number</b> — and less if you ride fast or uphill a lot.</p>
+      <p class="big">Every brand measures range at unrealistically slow, steady speeds. Independent testers get <b>roughly half</b> the claim when you ride normally.</p>
+      <p>Your ST3 Pro is advertised at 75 km — but ERideHero measured <b>~40 km real</b> (24.9 miles) at a normal pace. <b>Plan for about 40 km per charge</b>, less if you ride fast or uphill a lot. Totally normal — every scooter in this class does the same.</p>
     </div>
   </section>
 
-  <!-- HORN vs BELL -->
   <section>
-    <div class="h-eyebrow">You asked specifically</div>
-    <h2 class="sec-h">🔊 Horn vs. bell — and can you upgrade?</h2>
-    <p class="sec-sub">One has a loud button-horn; the other just has a bell. Here's the fix.</p>
+    <div class="h-eyebrow">You asked about this</div>
+    <h2 class="sec-h">🔊 Horn / bell — and how to go louder</h2>
+    <p class="sec-sub">The G2 has a loud button-horn; the NAVEE uses a bell/beep. Easy to upgrade.</p>
     <div class="callout g2a" style="margin-bottom:12px">
       <h3><span class="g2t">KUKIRIN G2</span> → Electric horn ✅</h3>
-      <p>Loud, button-activated horn on the handlebar. Better for busy roads out of the box.</p>
+      <p>Loud, button-activated horn on the handlebar — great for busy roads out of the box.</p>
     </div>
     <div class="callout st3a">
-      <h3><span class="st3t">NAVEE ST3</span> → Mechanical bell 🔔</h3>
-      <p>Comes with a simple ring-bell lever on the left grip — quieter than a horn.</p>
-      <p class="big"><b>Good news:</b> you <span class="anchor-hi">can add a clamp-on horn</span>. Rechargeable/battery handlebar horns that fit standard 22–32 mm bars are sold on Amazon and just bolt on — <b>no wiring needed</b>. So the ST3's quiet bell isn't a dealbreaker.</p>
-      <p class="fineprint">Heads-up: the ST3's left grip is already busy (bell + turn-signal buttons), so mount the horn on a clear part of the bar or the stem. Double-check your bar's clamp size before buying.</p>
+      <h3><span class="st3t">NAVEE ST3 Pro</span> → Built-in bell/beep 🔔</h3>
+      <p>Comes with a built-in bell/beep on the handlebar — handy, but quieter than a car-style horn.</p>
+      <p class="big"><b>Want louder?</b> You <span class="anchor-hi">can add a clamp-on horn</span>. Rechargeable handlebar horns that fit standard 22–32 mm bars are on Amazon and just bolt on — <b>no wiring needed</b>.</p>
+      <p class="fineprint">The left grip is a bit busy (bell + turn-signal buttons), so mount the horn on a clear part of the bar or the stem. Check your bar's clamp size before buying.</p>
     </div>
   </section>
 
-  <!-- APP LOCK -->
   <section>
     <div class="callout st3a">
-      <h3>🔐 Which one can you lock &amp; track from your phone?</h3>
-      <p class="big">Only the <b class="st3t">NAVEE ST3</b>. It pairs to the NAVEE app with a Bluetooth <b>e-lock</b> and Apple <b>Find My</b> phone tracking (iPhone). Walk up and it unlocks; if it's ever stolen, you can locate it.</p>
-      <p>The <b class="g2t">KUKIRIN G2</b> has <b>no official app, no app-lock, and no tracking</b>. (There's an unofficial third-party Android app floating around, but it's not from KUKIRIN and adds no lock or tracking.)</p>
+      <h3>🔐 Your ST3 Pro can be locked &amp; tracked from your phone</h3>
+      <p class="big">The <b class="st3t">NAVEE ST3 Pro</b> pairs to the NAVEE app with a Bluetooth <b>e-lock</b> and Apple <b>Find My</b> tracking (iPhone). Walk up and it unlocks; if it's ever stolen, you can locate it. Worth setting up on day one.</p>
+      <p>The <b class="g2t">KUKIRIN G2</b> has none of that — no app, no lock, no tracking. One of the biggest reasons the Pro is the better buy.</p>
     </div>
   </section>
 
-  <!-- WHAT EACH HAS THAT THE OTHER DOESN'T -->
   <section>
     <div class="h-eyebrow">The tiebreakers</div>
     <h2 class="sec-h">What each has that the other doesn't</h2>
     <div class="cards" style="grid-template-columns:1fr;gap:12px;margin-top:14px">
       <div class="card" style="padding:16px">
         <div class="rev-card st3" style="border:0;box-shadow:none;padding:0;background:none">
-          <div class="nm" style="margin-bottom:10px">Only the NAVEE ST3 has…</div>
+          <div class="nm" style="margin-bottom:10px">Only the NAVEE ST3 Pro has…</div>
         </div>
         <ul class="clean">
           <li><span class="ci">📱</span><b>Phone app + Apple Find My</b> tracking</li>
           <li><span class="ci">🔐</span><b>Bluetooth e-lock</b> + walk-up unlock (anti-theft)</li>
-          <li><span class="ci">💧</span>Higher <b>IPX5</b> water resistance</li>
-          <li><span class="ci">🎛️</span>App-controlled <b>traction control</b> + auto headlight</li>
+          <li><span class="ci">🛡️</span><b>Confirmed UL2272</b> battery-safety certification</li>
+          <li><span class="ci">⭐</span>A real <b>9.0/10</b> independent test score</li>
+          <li><span class="ci">🪶</span>The plusher <b>"riding on a cloud"</b> suspension</li>
         </ul>
       </div>
       <div class="card" style="padding:16px">
@@ -399,55 +372,48 @@
         </div>
         <ul class="clean">
           <li><span class="ci">⚡</span><b>Higher top speed</b> (45 vs 40 km/h)</li>
-          <li><span class="ci">⚙️</span><b>Stronger rated motor</b> + bigger battery</li>
-          <li><span class="ci">⛰️</span><b>Steeper hill climbing</b> (20° vs 13.5°)</li>
-          <li><span class="ci">🛑</span><b>Front disc brake</b> (vs the ST3's front drum)</li>
+          <li><span class="ci">🔋</span><b>Bigger battery</b> + higher <em>rated</em> motor</li>
+          <li><span class="ci">⛰️</span><b>Steeper hill climb</b> on paper (20° vs ~15.6°)</li>
+          <li><span class="ci">🛑</span><b>Front disc brake</b> (vs the Pro's front drum)</li>
           <li><span class="ci">🔊</span>Loud <b>electric horn</b> stock</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- REVIEW SENTIMENT -->
   <section>
     <div class="h-eyebrow">What reviewers &amp; testers say</div>
     <h2 class="sec-h">⭐ The review vibe</h2>
     <p class="sec-sub">Honest summary from independent sources.</p>
 
-    <div class="callout warn" style="margin-bottom:14px">
-      <h3 style="font-size:14.5px">ℹ️ One fair-play note</h3>
-      <p style="font-size:13px">The deepest independent testing is on the NAVEE <b>ST3 Pro</b> (a beefier sibling of the base ST3) and the KUKIRIN <b>G2 Master</b> (a dual-motor version of the base G2). So treat the glowing numbers as the <em>family</em> reputation — the base models will land a bit below their hyped-up siblings.</p>
-    </div>
-
     <div class="rev">
       <div class="rev-card st3">
-        <div class="top"><span class="nm">NAVEE ST3 family</span><span class="score">Best reviewed</span></div>
-        <div class="pn"><b class="plus">+ Praised:</b> Plush "riding-on-a-cloud" suspension, strong hills, fast off the line, rock-solid build. ST3 Pro scored <b>9.0/10</b> at ERideHero.</div>
-        <div class="pn"><b class="minus">− Knocked for:</b> Range way below the claim; some wobble near top speed; a few owners report battery quirks and slow warranty support.</div>
-        <div class="quote">"The most complete commuter scooter." — ERideHero (on the ST3 Pro)</div>
-        <div class="src">Sources: ERideHero, New Atlas, Rider Guide · Reddit owners ~71% positive</div>
+        <div class="top"><span class="nm">NAVEE ST3 Pro</span><span class="score">9.0/10 tested</span></div>
+        <div class="pn"><b class="plus">+ Praised:</b> "Ticks more boxes than anything else in its class" (ERideHero). Plush ride, strong hills, quick off the line, consistent 48V power, rock-solid build. New Atlas called the ST3 line "the Rolls-Royce of e-scooters."</div>
+        <div class="pn"><b class="minus">− Knocked for:</b> Advertised range is optimistic (real ~40 km); a little wobble near top speed. Warranty support can be slow if you need it.</div>
+        <div class="quote">"A do-it-all commuter that ticks more boxes than anything else in this class." — ERideHero</div>
+        <div class="src">Sources: ERideHero 9.0/10, New Atlas, Pro Tool Reviews · Reddit owners lean positive</div>
       </div>
 
       <div class="rev-card g2">
-        <div class="top"><span class="nm">KUKIRIN G2 family</span><span class="score">Enthusiast-loved</span></div>
+        <div class="top"><span class="nm">KUKIRIN G2</span><span class="score">Enthusiast-loved</span></div>
         <div class="pn"><b class="plus">+ Praised:</b> Strong acceleration for the money, stable on rough pavement, comfy suspension. The dual-motor G2 Master is well-liked for reliability &amp; hill power.</div>
-        <div class="pn"><b class="minus">− Knocked for:</b> Range overstated; some reports of controller errors and slow replacement parts. Big review sites haven't rigorously tested the base G2 — coverage is mostly blogs &amp; owners.</div>
+        <div class="pn"><b class="minus">− Knocked for:</b> Range overstated; some controller-error and slow-parts reports. <b>Heads-up:</b> most G2 buzz online is actually about the dual-motor <b>G2 Master</b>, not the base G2 — big review sites haven't rigorously tested the base model.</div>
         <div class="quote">"Well-regarded, good reliability." — Reddit owners (mostly on the G2 Master)</div>
         <div class="src">Sources: Mountain Weekly News, Tabvelo, EScooterHut · Reddit (G2 Master) ~77% positive</div>
       </div>
     </div>
   </section>
 
-  <!-- REDDIT / REAL PEOPLE -->
   <section>
     <div class="h-eyebrow">Straight from owners</div>
     <h2 class="sec-h">💬 What real riders say (Reddit &amp; forums)</h2>
     <p class="sec-sub">Unfiltered — the good and the annoying.</p>
     <div class="rev">
       <div class="rev-card st3">
-        <div class="top"><span class="nm">NAVEE ST3 owners</span></div>
-        <div class="pn"><b class="plus">👍</b> "Heavier frame = really stable." Handles hills well. Some keep it as their daily even next to pricier scooters.</div>
-        <div class="pn"><b class="minus">👎</b> Range gripes are the #1 complaint ("actual range ~1/3 of advertised" for hard riders). A few battery-percentage glitches, and support that can be slow to reply.</div>
+        <div class="top"><span class="nm">NAVEE ST3 / ST3 Pro owners</span></div>
+        <div class="pn"><b class="plus">👍</b> "Heavier frame = really stable." Handles hills well, plush ride, keep-it-as-my-daily loyalty. Support "has gotten better over time."</div>
+        <div class="pn"><b class="minus">👎</b> Range gripes are the #1 complaint (real range well under the claim). A few battery-percentage quirks, and support that can be slow to reply.</div>
         <div class="quote">"NAVEE makes good scooters and support has gotten better over time." — long-term owner, r/ElectricScooters</div>
       </div>
       <div class="rev-card g2">
@@ -457,47 +423,40 @@
         <div class="quote">"1,000 miles, only needed tires, brake pads, and a kickstand fix." — Reddit owner (G2 Master)</div>
       </div>
     </div>
-    <p class="fineprint">Both brands sit around 4–4.5★ overall, with mixed warranty/support stories. Keep your proof of purchase and register the warranty either way (both offer up to 24 months).</p>
+    <p class="fineprint">Both brands sit around 4–4.5★ overall, with mixed warranty/support stories. Register your ST3 Pro's warranty and keep the receipt — NAVEE offers up to 24 months.</p>
   </section>
 
-  <!-- SAFETY -->
   <section>
     <div class="h-eyebrow">Real talk, because it matters</div>
     <h2 class="sec-h">🦺 Ride-smart note</h2>
     <div class="callout warn">
-      <p class="big">Both scooters are rated for <b>ages 16+</b> and both go <b>faster than 40 km/h</b> — that's genuinely fast. A few non-negotiables:</p>
+      <p class="big">Your ST3 Pro does <b>40 km/h</b> — genuinely fast. It's rated for <b>ages 16+</b>, so ease in and ride it smart:</p>
       <ul class="clean" style="margin-top:12px">
-        <li><span class="ci">⛑️</span><b>Always wear a helmet.</b> A full-face/chin-bar helmet is smart at these speeds.</li>
+        <li><span class="ci">⛑️</span><b>Always wear a helmet.</b> A full-face / chin-bar helmet is smart at these speeds.</li>
         <li><span class="ci">🐢</span><b>Start in the lowest speed mode</b> until it feels like second nature, then step up.</li>
-        <li><span class="ci">📍</span><b>Check the local rules.</b> In BC/Victoria, e-scooters on public roads are generally limited to <b>~24 km/h</b> — so top speed is for legal, safe spots, not the street.</li>
+        <li><span class="ci">📍</span><b>Check the local rules.</b> In BC/Victoria, e-scooters on public roads are generally capped around <b>24 km/h</b> and min age 16 — so full speed is for legal, safe, off-road spots, not the street.</li>
         <li><span class="ci">👀</span>Ride predictably, use the lights &amp; signals, and assume cars can't see you.</li>
       </ul>
     </div>
   </section>
 
-  <!-- LINKS OUT -->
   <section>
     <div class="h-eyebrow">Go to the source</div>
     <h2 class="sec-h">See the official pages</h2>
     <div class="links">
       <a class="btn g2" href="https://www.kukirinscooter.ca/products/kukirin-g2-electric-scooter" target="_blank" rel="noopener">
-        <span class="b1">KUKIRIN</span><span class="b2">G2 →</span><span class="b3">Official listing</span>
+        <span class="b1">KUKIRIN</span><span class="b2">G2 →</span><span class="b3">What you compared</span>
       </a>
-      <a class="btn st3" href="https://www.naveetech.com/navee-st3/" target="_blank" rel="noopener">
-        <span class="b1">NAVEE</span><span class="b2">ST3 →</span><span class="b3">Official page</span>
-      </a>
-    </div>
-    <div class="links" style="grid-template-columns:1fr;margin-top:12px">
-      <a class="btn st3" href="https://www.amazon.ca/NAVEE-Electric-Max1000w-Suspension-Tubeless/dp/B0F7XRNFZN" target="_blank" rel="noopener">
-        <span class="b1">Also</span><span class="b2">NAVEE ST3 on Amazon.ca →</span>
+      <a class="btn st3" href="https://www.amazon.ca/NAVEE-Electric-Scooter-Suspension-Students-ST3/dp/B0F6D2YQRR" target="_blank" rel="noopener">
+        <span class="b1">NAVEE</span><span class="b2">ST3 Pro →</span><span class="b3">Your scooter</span>
       </a>
     </div>
   </section>
 
   <footer>
     <div class="sig">Made for Phoenix 🛴⚡</div>
-    <p>Specs verified against the makers' official listings, July 2026. No prices included — this is about the ride, not the receipt. Independent review sentiment via ERideHero, New Atlas, Rider Guide, Reddit r/ElectricScooters &amp; owner reports. Numbers can change with model revisions — double-check the official pages before you buy.</p>
-    <p style="margin-top:10px">Take your time. Whichever you pick, wear the helmet. — Dad</p>
+    <p>Specs verified against the makers' listings + independent testing (ERideHero, New Atlas, Pro Tool Reviews), July 2026. No prices — this is about the ride. The NAVEE ST3 Pro is the one on its way to you. Numbers can shift with model revisions — check the official pages anytime.</p>
+    <p style="margin-top:10px">Great pick. Now go ride it — helmet on. — Dad</p>
   </footer>
 
 </div>
